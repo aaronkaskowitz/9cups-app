@@ -84,6 +84,27 @@ struct ProfileView: View {
                     .cupsCard()
                     .padding(.horizontal, 16)
 
+                    // Send Feedback
+                    Button(action: {
+                        if let url = URL(string: "mailto:aaronkaskowitz@gmail.com?subject=9%20Cups%20Feedback") {
+                            UIApplication.shared.open(url)
+                        }
+                    }) {
+                        HStack {
+                            Image(systemName: "envelope")
+                            Text("Send Feedback")
+                        }
+                        .font(CupsTheme.labelFont(15))
+                        .foregroundColor(CupsTheme.primaryAccent)
+                        .frame(maxWidth: .infinity)
+                        .padding(14)
+                        .background(CupsTheme.cardBackground)
+                        .cornerRadius(CupsTheme.cornerRadius)
+                    }
+                    .padding(.horizontal, 16)
+                    .frame(minHeight: 48)
+                    .accessibilityLabel("Send feedback by email")
+
                     // Reset Data
                     Button(action: { showResetConfirmation = true }) {
                         HStack {
