@@ -47,11 +47,11 @@ Inspired by the Wahls Protocol® for MS and autoimmune conditions. Not affiliate
 MS, multiple sclerosis, wahls, diet, nutrition, tracker, autoimmune, vegetables, health, paleo
 
 ## Privacy URL
-https://attractions-paris-revolutionary-contractor.trycloudflare.com/9cups-screens/legal/privacy.html
+https://aaronkaskowitz.github.io/9cups-app/privacy.html
 (Replace with permanent domain when available)
 
 ## Support URL
-https://attractions-paris-revolutionary-contractor.trycloudflare.com/9cups-screens/legal/support.html
+https://aaronkaskowitz.github.io/9cups-app/support.html
 (Replace with permanent domain when available)
 
 ## What's New (v1.0)
@@ -71,9 +71,9 @@ Initial release! Track your 9 cups of daily vegetables, protein, seaweed, and fe
 - **Copyright:** © 2026 Myelin Nation
 
 ## Legal Pages (hosted)
-- Privacy Policy: /9cups-screens/legal/privacy.html
+- Privacy Policy: https://aaronkaskowitz.github.io/9cups-app/privacy.html
 - Terms of Use: /9cups-screens/legal/terms.html
-- Support / FAQ: /9cups-screens/legal/support.html
+- Support / FAQ: https://aaronkaskowitz.github.io/9cups-app/support.html
 
 ## App Store Review Checklist
 - [ ] Apple Developer Program enrolled ($99)
