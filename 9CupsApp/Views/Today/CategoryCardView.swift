@@ -88,7 +88,7 @@ struct CategoryCardView: View {
 
             // Action buttons
             if isCheckbox {
-                Button(action: { UIImpactFeedbackGenerator(style: .light).impactOccurred(); onIncrement() }) {
+                Button(action: { UIImpactFeedbackGenerator(style: .medium).impactOccurred(); onIncrement() }) {
                     Image(systemName: isChecked ? "checkmark.circle.fill" : "circle")
                         .font(.system(size: 28))
                         .foregroundColor(isChecked ? CupsTheme.primaryAccent : CupsTheme.textSecondary)

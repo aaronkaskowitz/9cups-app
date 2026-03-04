@@ -198,6 +198,19 @@ class AppState: ObservableObject {
         loadData()
     }
 
+    // MARK: - Date Rollover
+
+    func checkDateRollover() {
+        let calendar = Calendar.current
+        let today = calendar.startOfDay(for: Date())
+        if let log = todayLog {
+            let logDay = calendar.startOfDay(for: log.date)
+            if logDay != today {
+                todayLog = persistence.getOrCreateTodayLog()
+            }
+        }
+    }
+
     // MARK: - Helpers
 
     private func ensureTodayLog() -> CDDailyLog {

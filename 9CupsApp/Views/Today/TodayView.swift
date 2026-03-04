@@ -60,10 +60,18 @@ struct TodayView: View {
                     )
                     .padding(.vertical, 8)
 
-                    // Score
-                    Text("\(appState.todayScore)% daily score")
-                        .font(CupsTheme.labelFont(14))
-                        .foregroundColor(CupsTheme.textSecondary)
+                    // Empty state hint
+                    if appState.totalCups == 0 && !(log?.seaweed ?? false) && !(log?.fermented ?? false) {
+                        Text("Tap + to start logging")
+                            .font(CupsTheme.bodyFont(15))
+                            .foregroundColor(CupsTheme.textSecondary.opacity(0.7))
+                    } else {
+                        // Score
+                        Text("\(appState.todayScore)% daily score")
+                            .font(CupsTheme.labelFont(14))
+                            .foregroundColor(CupsTheme.textSecondary)
+                            .accessibilityLabel("\(appState.todayScore) percent daily score")
+                    }
 
 
                     // Category Cards
@@ -83,6 +91,7 @@ struct TodayView: View {
                             .foregroundColor(CupsTheme.textSecondary)
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .padding(.horizontal, 16)
+                            .accessibilityLabel("Colored Produce, 3 cups total, aim for all 3 colors")
 
                         VStack(spacing: 12) {
                             CategoryCardView(

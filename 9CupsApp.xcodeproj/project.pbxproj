@@ -20,9 +20,7 @@
 		'AA000009' = {isa = PBXBuildFile; fileRef = BB000009; };
 		'AA000010' = {isa = PBXBuildFile; fileRef = BB000010; };
 		'AA000011' = {isa = PBXBuildFile; fileRef = BB000011; };
-		'AA000022' = {isa = PBXBuildFile; fileRef = BB000022; };
 		'AA000012' = {isa = PBXBuildFile; fileRef = BB000012; };
-		'AA000013' = {isa = PBXBuildFile; fileRef = BB000013; };
 		'AA000014' = {isa = PBXBuildFile; fileRef = BB000014; };
 		'AA000015' = {isa = PBXBuildFile; fileRef = BB000015; };
 		'AA000016' = {isa = PBXBuildFile; fileRef = BB000016; };
@@ -43,9 +41,7 @@
 		'BB000009' = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		'BB000010' = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayView.swift; sourceTree = "<group>"; };
 		'BB000011' = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorRingView.swift; sourceTree = "<group>"; };
-		'BB000022' = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorGroupCardView.swift; sourceTree = "<group>"; };
 		'BB000012' = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCardView.swift; sourceTree = "<group>"; };
-		'BB000013' = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickAddBar.swift; sourceTree = "<group>"; };
 		'BB000014' = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideView.swift; sourceTree = "<group>"; };
 		'BB000015' = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelDetailView.swift; sourceTree = "<group>"; };
 		'BB000016' = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListView.swift; sourceTree = "<group>"; };
@@ -160,9 +156,7 @@
 			children = (
 				BB000010,
 				BB000011,
-				BB000022,
 				BB000012,
-				BB000013,
 				BB000021,
 			);
 			path = Today;
@@ -268,7 +262,6 @@
 				AA000010,
 				AA000011,
 				AA000012,
-				AA000013,
 				AA000014,
 				AA000015,
 				AA000016,
@@ -276,7 +269,6 @@
 				AA000018,
 				24E9428F97FD4081A1C1183F /* OnboardingView.swift in Sources */,
 				AA000021,
-				AA000022,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
