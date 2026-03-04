@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>9 Cups — Onboarding</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#111;font-family:-apple-system,'SF Pro Display',system-ui,sans-serif;display:flex;flex-wrap:wrap;justify-content:center;gap:40px;padding:60px 20px}
+:root{--bg:#0f1f0f;--card:#1a2e1a;--green:#4ade80;--green-dim:#22543d;--amber:#f5c542;--white60:rgba(255,255,255,0.6)}
+.phone{width:375px;height:812px;background:var(--bg);border-radius:44px;overflow:hidden;position:relative;box-shadow:0 20px 60px rgba(0,0,0,0.5),inset 0 0 0 3px #333;flex-shrink:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.dynamic-island{width:120px;height:34px;background:#000;border-radius:20px;position:absolute;top:10px;left:50%;transform:translateX(-50%)}
+.dots{display:flex;gap:8px;position:absolute;bottom:130px}
+.dot{width:8px;height:8px;border-radius:4px;background:rgba(74,222,128,0.2)}
+.dot.active{background:var(--green)}
+.cta{position:absolute;bottom:50px;left:32px;right:32px;padding:18px;background:var(--green);border-radius:16px;text-align:center;font-size:18px;font-weight:700;color:var(--bg);font-family:inherit}
+
+/* Rainbow ring logo */
+.logo{width:120px;height:120px;position:relative;margin-bottom:20px}
+.logo svg{width:100%;height:100%}
+
+.title{font-size:36px;font-weight:700;color:white;letter-spacing:-0.5px}
+.subtitle{font-size:16px;color:var(--white60);text-align:center;margin-top:12px;line-height:1.5;padding:0 20px}
+.fine{font-size:13px;color:rgba(255,255,255,0.35);text-align:center;margin-top:12px;line-height:1.5;padding:0 20px}
+
+/* Level cards */
+.levels{padding:0 32px;width:100%}
+.level-card{padding:16px;background:var(--card);border-radius:14px;margin-bottom:12px;display:flex;align-items:center;justify-content:space-between}
+.level-card.selected{background:rgba(74,222,128,0.1);border:1.5px solid rgba(74,222,128,0.4)}
+.level-card .left{display:flex;flex-direction:column;gap:4px}
+.level-num{font-size:16px;font-weight:700;color:white}
+.level-name{font-size:13px;color:var(--white60)}
+.check{width:24px;height:24px;border-radius:12px;border:2px solid rgba(255,255,255,0.2)}
+.check.on{background:var(--green);border-color:var(--green);display:flex;align-items:center;justify-content:center;color:var(--bg);font-size:14px;font-weight:700}
+
+/* Name input */
+.input-box{margin:0 32px;padding:16px;background:var(--card);border-radius:14px;font-size:18px;color:rgba(255,255,255,0.25);width:calc(100% - 64px)}
+.heading{font-size:26px;font-weight:700;color:white;text-align:center;margin-bottom:12px}
+.sub{font-size:14px;color:var(--white60);text-align:center;margin-bottom:24px}
+</style>
+</head>
+<body>
+
+<!-- SCREEN 1: WELCOME -->
+<div class="phone">
+  <div class="dynamic-island"></div>
+  <div style="text-align:center;padding:0 32px">
+    <div class="logo">
+      <svg viewBox="0 0 120 120">
+        <!-- 5-segment rainbow ring -->
+        <path d="M 61.8 8.0 A 52 52 0 0 1 105.9 84.4" fill="none" stroke="#4ade80" stroke-width="10" stroke-linecap="round"/>
+        <path d="M 104.1 87.6 A 52 52 0 0 1 79.5 108.2" fill="none" stroke="#ef4444" stroke-width="10" stroke-linecap="round"/>
+        <path d="M 76.1 109.5 A 52 52 0 0 1 43.9 109.5" fill="none" stroke="#f59e0b" stroke-width="10" stroke-linecap="round"/>
+        <path d="M 40.5 108.2 A 52 52 0 0 1 15.9 87.6" fill="none" stroke="#6366f1" stroke-width="10" stroke-linecap="round"/>
+        <path d="M 14.1 84.4 A 52 52 0 0 1 58.2 8.0" fill="none" stroke="#c7b894" stroke-width="10" stroke-linecap="round"/>
+        <text x="60" y="58" text-anchor="middle" fill="white" font-family="-apple-system,system-ui,sans-serif" font-size="32" font-weight="700">9</text>
+        <text x="60" y="76" text-anchor="middle" fill="#4ade80" font-family="-apple-system,system-ui,sans-serif" font-size="12" font-weight="600">cups</text>
+      </svg>
+    </div>
+    <div class="title">9 Cups</div>
+    <div class="subtitle">Track your daily nutrition<br>with zero friction.</div>
+    <div class="fine">Inspired by the Wahls Protocol®<br>for MS and autoimmune conditions.</div>
+  </div>
+  <div class="dots"><div class="dot active"></div><div class="dot"></div><div class="dot"></div></div>
+  <div class="cta">Continue</div>
+</div>
+
+<!-- SCREEN 2: LEVEL -->
+<div class="phone">
+  <div class="dynamic-island"></div>
+  <div style="width:100%;padding-top:80px">
+    <div class="heading">Pick your level</div>
+    <div class="sub">You can change this anytime.</div>
+    <div class="levels">
+      <div class="level-card selected">
+        <div class="left"><span class="level-num">Level 1</span><span class="level-name">Foundation</span></div>
+        <div class="check on">✓</div>
+      </div>
+      <div class="level-card">
+        <div class="left"><span class="level-num">Level 2</span><span class="level-name">Paleo</span></div>
+        <div class="check"></div>
+      </div>
+      <div class="level-card">
+        <div class="left"><span class="level-num">Level 3</span><span class="level-name">Paleo Plus</span></div>
+        <div class="check"></div>
+      </div>
+    </div>
+  </div>
+  <div class="dots"><div class="dot"></div><div class="dot active"></div><div class="dot"></div></div>
+  <div class="cta">Continue</div>
+</div>
+
+<!-- SCREEN 3: NAME -->
+<div class="phone">
+  <div class="dynamic-island"></div>
+  <div style="width:100%;padding-top:80px;text-align:center">
+    <div class="heading">What should we call you?</div>
+    <div class="sub">First name or alias. Stays on your device.</div>
+    <div class="input-box">e.g. Aaron</div>
+  </div>
+  <div class="dots"><div class="dot"></div><div class="dot"></div><div class="dot active"></div></div>
+  <div class="cta">Let's go</div>
+</div>
+
+</body>
+</html>
