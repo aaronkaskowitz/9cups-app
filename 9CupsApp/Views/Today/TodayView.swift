@@ -15,6 +15,9 @@ struct TodayView: View {
     }
 
     @State private var previousTotalCups = 0
+    @State private var showPhotoCheckIn = false
+    @State private var showPremiumUpgrade = false
+    @EnvironmentObject var premiumManager: PremiumManager
 
     private var log: CDDailyLog? { appState.todayLog }
 
@@ -81,6 +84,7 @@ struct TodayView: View {
                             name: "Leafy Greens",
                             current: Int(log?.leafyGreens ?? 0),
                             target: 3,
+                            categoryKey: .leafyGreens,
                             onIncrement: { appState.addLeafyGreen() },
                             onDecrement: { appState.decrementLeafyGreen() }
                         )
@@ -100,6 +104,7 @@ struct TodayView: View {
                                 current: Int(log?.redPurple ?? 0),
                                 target: 1,
                                 unit: "cups",
+                                categoryKey: .redPurple,
                                 onIncrement: { appState.addRedPurple() },
                                 onDecrement: { appState.decrementRedPurple() }
                             )
@@ -110,6 +115,7 @@ struct TodayView: View {
                                 current: Int(log?.orangeYellow ?? 0),
                                 target: 1,
                                 unit: "cups",
+                                categoryKey: .orangeYellow,
                                 onIncrement: { appState.addOrangeYellow() },
                                 onDecrement: { appState.decrementOrangeYellow() }
                             )
@@ -120,6 +126,7 @@ struct TodayView: View {
                                 current: Int(log?.blueBlack ?? 0),
                                 target: 1,
                                 unit: "cups",
+                                categoryKey: .blueBlack,
                                 onIncrement: { appState.addBlueBlack() },
                                 onDecrement: { appState.decrementBlueBlack() }
                             )
@@ -131,6 +138,7 @@ struct TodayView: View {
                             name: "Sulfur-Rich",
                             current: Int(log?.sulfurRich ?? 0),
                             target: 3,
+                            categoryKey: .sulfurRich,
                             onIncrement: { appState.addSulfurRich() },
                             onDecrement: { appState.decrementSulfurRich() }
                         )
@@ -141,6 +149,7 @@ struct TodayView: View {
                             current: Int(log?.proteinOz ?? 0),
                             target: appState.proteinTarget,
                             unit: "oz",
+                            categoryKey: .protein,
                             onIncrement: { appState.addProtein(oz: 1) },
                             onDecrement: { appState.decrementProtein() }
                         )
@@ -152,6 +161,7 @@ struct TodayView: View {
                             target: 1,
                             isCheckbox: true,
                             isChecked: log?.seaweed ?? false,
+                            categoryKey: .seaweed,
                             onIncrement: { appState.toggleSeaweed() }
                         )
 
@@ -162,6 +172,7 @@ struct TodayView: View {
                             target: 1,
                             isCheckbox: true,
                             isChecked: log?.fermented ?? false,
+                            categoryKey: .fermented,
                             onIncrement: { appState.toggleFermented() }
                         )
 
@@ -171,6 +182,7 @@ struct TodayView: View {
                             current: appState.weeklyOrganMeatOz,
                             target: 12,
                             unit: "oz/week",
+                            categoryKey: .organMeat,
                             onIncrement: { appState.addOrganMeat(oz: 1) },
                             onDecrement: { appState.decrementOrganMeat() }
                         )
@@ -182,7 +194,38 @@ struct TodayView: View {
                 .padding(.top, 8)
             }
             .background(CupsTheme.background.ignoresSafeArea())
-            .navigationBarHidden(true)
+            .navigationBarHidden(false)
+            .navigationTitle("")
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        if premiumManager.isPremium {
+                            showPhotoCheckIn = true
+                        } else {
+                            showPremiumUpgrade = true
+                        }
+                    } label: {
+                        HStack(spacing: 4) {
+                            Image(systemName: "camera.fill")
+                                .font(.system(size: 16))
+                            if !premiumManager.isPremium {
+                                Image(systemName: "lock.fill")
+                                    .font(.system(size: 10))
+                            }
+                        }
+                        .foregroundColor(CupsTheme.primaryAccent)
+                    }
+                }
+            }
+            .sheet(isPresented: $showPhotoCheckIn) {
+                PhotoCheckInView()
+                    .environmentObject(appState)
+                    .environmentObject(premiumManager)
+            }
+            .sheet(isPresented: $showPremiumUpgrade) {
+                PremiumUpgradeSheet()
+                    .environmentObject(premiumManager)
+            }
         }
         .navigationViewStyle(.stack)
         .onChange(of: appState.totalCups) { _, newValue in

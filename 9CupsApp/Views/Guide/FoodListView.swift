@@ -17,9 +17,17 @@ struct FoodListView: View {
                         .font(.system(size: 22))
                         .accessibilityHidden(true)
 
-                    Text("What counts as \(category.name.lowercased())?")
-                        .font(CupsTheme.labelFont(15))
-                        .foregroundColor(CupsTheme.textPrimary)
+                    VStack(alignment: .leading, spacing: 2) {
+                        Text("What counts as \(category.name.lowercased())?")
+                            .font(CupsTheme.labelFont(15))
+                            .foregroundColor(CupsTheme.textPrimary)
+
+                        if let subtitle = category.subtitle {
+                            Text(subtitle)
+                                .font(CupsTheme.bodyFont(12))
+                                .foregroundColor(CupsTheme.textSecondary)
+                        }
+                    }
 
                     Spacer()
 

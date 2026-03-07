@@ -5,6 +5,7 @@ struct FoodCategory: Identifiable {
     let name: String
     let emoji: String
     let foods: [String]
+    var subtitle: String? = nil
 }
 
 enum FoodDatabase {
@@ -23,11 +24,13 @@ enum FoodDatabase {
         name: "Red & Purple",
         emoji: "\u{1F534}",
         foods: [
-            "Beets", "Red Cabbage", "Blueberries", "Blackberries",
+            "Beets", "Red Cabbage",
             "Raspberries", "Cherries", "Cranberries", "Pomegranate",
             "Plums", "Eggplant", "Purple Grapes", "Red Onion",
             "Radicchio", "Blood Orange", "Watermelon", "Strawberries",
-        ]
+            "Red Grapes", "Purple Figs", "Tart Cherries",
+        ],
+        subtitle: "Fruits & vegetables that are red or purple"
     )
 
     static let orangeYellow = FoodCategory(
@@ -38,7 +41,8 @@ enum FoodDatabase {
             "Orange Bell Peppers", "Yellow Bell Peppers", "Mangoes",
             "Peaches", "Apricots", "Pumpkin", "Golden Beets",
             "Acorn Squash", "Papaya", "Oranges", "Nectarines",
-        ]
+        ],
+        subtitle: "Fruits & vegetables that are orange or yellow"
     )
 
     static let blueBlack = FoodCategory(
@@ -48,8 +52,9 @@ enum FoodDatabase {
             "Blueberries", "Blackberries", "Black Grapes", "Elderberries",
             "Black Currants", "Purple Carrots", "Black Rice",
             "Black Olives", "Figs", "Dark Plums", "Black Beans",
-            "Açaí Berries",
-        ]
+            "Açaí Berries", "Boysenberries", "Mulberries",
+        ],
+        subtitle: "Fruits & vegetables that are blue or black"
     )
 
     static let sulfurRich = FoodCategory(

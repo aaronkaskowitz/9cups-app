@@ -90,6 +90,21 @@ class AppState: ObservableObject {
         updateStreak()
     }
 
+    func applyPhotoIncrements(_ increments: PhotoIncrements) {
+        let log = ensureTodayLog()
+        if increments.leafyGreens > 0 { log.leafyGreens = min(log.leafyGreens + Int16(increments.leafyGreens), 9) }
+        if increments.redPurple > 0 { log.redPurple = min(log.redPurple + Int16(increments.redPurple), 9) }
+        if increments.orangeYellow > 0 { log.orangeYellow = min(log.orangeYellow + Int16(increments.orangeYellow), 9) }
+        if increments.blueBlack > 0 { log.blueBlack = min(log.blueBlack + Int16(increments.blueBlack), 9) }
+        if increments.sulfurRich > 0 { log.sulfurRich = min(log.sulfurRich + Int16(increments.sulfurRich), 9) }
+        if increments.proteinOz > 0 { log.proteinOz = min(log.proteinOz + Int16(increments.proteinOz), 24) }
+        if increments.seaweed { log.seaweed = true }
+        if increments.fermented { log.fermented = true }
+        if increments.organMeatOz > 0 { log.organMeatOz = min(log.organMeatOz + Int16(increments.organMeatOz), 48) }
+        save()
+        updateStreak()
+    }
+
     func decrementLeafyGreen() {
         let log = ensureTodayLog()
         if log.leafyGreens > 0 { log.leafyGreens -= 1 }

@@ -3,59 +3,69 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 63;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		068426D8DC9611A4590376BE /* PhotoCheckInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3E2368FBBD7CEB3F4D0A9D /* PhotoCheckInView.swift */; };
+		AA000022 /* CategoryInfoSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB000022 /* CategoryInfoSheet.swift */; };
 		24E9428F97FD4081A1C1183F /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11E4D9D8FD0BD47AC5E625A /* OnboardingView.swift */; };
-		AA000021 = {isa = PBXBuildFile; fileRef = BB000021; };
-		'AA000001' = {isa = PBXBuildFile; fileRef = BB000001; };
-		'AA000002' = {isa = PBXBuildFile; fileRef = BB000002; };
-		'AA000003' = {isa = PBXBuildFile; fileRef = BB000003; };
-		'AA000004' = {isa = PBXBuildFile; fileRef = BB000004; };
-		'AA000005' = {isa = PBXBuildFile; fileRef = BB000005; };
-		'AA000006' = {isa = PBXBuildFile; fileRef = BB000006; };
-		'AA000007' = {isa = PBXBuildFile; fileRef = BB000007; };
-		'AA000008' = {isa = PBXBuildFile; fileRef = BB000008; };
-		'AA000009' = {isa = PBXBuildFile; fileRef = BB000009; };
-		'AA000010' = {isa = PBXBuildFile; fileRef = BB000010; };
-		'AA000011' = {isa = PBXBuildFile; fileRef = BB000011; };
-		'AA000012' = {isa = PBXBuildFile; fileRef = BB000012; };
-		'AA000014' = {isa = PBXBuildFile; fileRef = BB000014; };
-		'AA000015' = {isa = PBXBuildFile; fileRef = BB000015; };
-		'AA000016' = {isa = PBXBuildFile; fileRef = BB000016; };
-		'AA000017' = {isa = PBXBuildFile; fileRef = BB000017; };
-		'AA000018' = {isa = PBXBuildFile; fileRef = BB000018; };
-		'AA000019' = {isa = PBXBuildFile; fileRef = BB000019; };
+		41AD376A815B05DC466C19CE /* FoodPhotoAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F04192E7E077E66756271F8 /* FoodPhotoAnalyzer.swift */; };
+		AA000001 /* NineCupsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB000001 /* NineCupsApp.swift */; };
+		AA000002 /* CupsTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB000002 /* CupsTheme.swift */; };
+		AA000003 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB000003 /* DataModel.swift */; };
+		AA000004 /* CDClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB000004 /* CDClasses.swift */; };
+		AA000005 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB000005 /* PersistenceController.swift */; };
+		AA000006 /* FoodDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB000006 /* FoodDatabase.swift */; };
+		AA000007 /* ProtocolLevels.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB000007 /* ProtocolLevels.swift */; };
+		AA000008 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB000008 /* AppState.swift */; };
+		AA000009 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB000009 /* MainTabView.swift */; };
+		AA000010 /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB000010 /* TodayView.swift */; };
+		AA000011 /* ColorRingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB000011 /* ColorRingView.swift */; };
+		AA000012 /* CategoryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB000012 /* CategoryCardView.swift */; };
+		AA000014 /* GuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB000014 /* GuideView.swift */; };
+		AA000015 /* LevelDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB000015 /* LevelDetailView.swift */; };
+		AA000016 /* FoodListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB000016 /* FoodListView.swift */; };
+		AA000017 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB000017 /* ProfileView.swift */; };
+		AA000018 /* WeeklySummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB000018 /* WeeklySummaryView.swift */; };
+		AA000019 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB000019 /* Assets.xcassets */; };
+		AA000021 /* CompactWeeklySummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB000021 /* CompactWeeklySummaryView.swift */; };
+		B393A7A10758B5DA2CF3F25D /* PremiumUpgradeSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E8B3785EB0C8D52A32D132 /* PremiumUpgradeSheet.swift */; };
+		EED0156C63D7EA2343B9624F /* PremiumManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E945EE25FB7144C6CBE404AB /* PremiumManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		'BB000001' = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NineCupsApp.swift; sourceTree = "<group>"; };
-		'BB000002' = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CupsTheme.swift; sourceTree = "<group>"; };
-		'BB000003' = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
-		'BB000004' = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDClasses.swift; sourceTree = "<group>"; };
-		'BB000005' = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
-		'BB000006' = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDatabase.swift; sourceTree = "<group>"; };
-		'BB000007' = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolLevels.swift; sourceTree = "<group>"; };
-		'BB000008' = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
-		'BB000009' = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
-		'BB000010' = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayView.swift; sourceTree = "<group>"; };
-		'BB000011' = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorRingView.swift; sourceTree = "<group>"; };
-		'BB000012' = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCardView.swift; sourceTree = "<group>"; };
-		'BB000014' = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideView.swift; sourceTree = "<group>"; };
-		'BB000015' = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelDetailView.swift; sourceTree = "<group>"; };
-		'BB000016' = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListView.swift; sourceTree = "<group>"; };
-		'BB000017' = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
-		'BB000018' = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklySummaryView.swift; sourceTree = "<group>"; };
-		'BB000019' = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		'BB000020' = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		'CC000001' = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = 9CupsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		87E8B3785EB0C8D52A32D132 /* PremiumUpgradeSheet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PremiumUpgradeSheet.swift; path = Views/Premium/PremiumUpgradeSheet.swift; sourceTree = "<group>"; };
+		8D3E2368FBBD7CEB3F4D0A9D /* PhotoCheckInView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhotoCheckInView.swift; path = Views/Today/PhotoCheckInView.swift; sourceTree = "<group>"; };
+		8F04192E7E077E66756271F8 /* FoodPhotoAnalyzer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FoodPhotoAnalyzer.swift; path = Services/FoodPhotoAnalyzer.swift; sourceTree = "<group>"; };
+		BB000001 /* NineCupsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NineCupsApp.swift; sourceTree = "<group>"; };
+		BB000002 /* CupsTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CupsTheme.swift; sourceTree = "<group>"; };
+		BB000003 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		BB000004 /* CDClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDClasses.swift; sourceTree = "<group>"; };
+		BB000005 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		BB000006 /* FoodDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDatabase.swift; sourceTree = "<group>"; };
+		BB000007 /* ProtocolLevels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolLevels.swift; sourceTree = "<group>"; };
+		BB000008 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		BB000009 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		BB000010 /* TodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayView.swift; sourceTree = "<group>"; };
+		BB000011 /* ColorRingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorRingView.swift; sourceTree = "<group>"; };
+		BB000012 /* CategoryCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCardView.swift; sourceTree = "<group>"; };
+		BB000014 /* GuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideView.swift; sourceTree = "<group>"; };
+		BB000015 /* LevelDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelDetailView.swift; sourceTree = "<group>"; };
+		BB000016 /* FoodListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListView.swift; sourceTree = "<group>"; };
+		BB000017 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		BB000018 /* WeeklySummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklySummaryView.swift; sourceTree = "<group>"; };
+		BB000019 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB000020 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		BB000021 /* CompactWeeklySummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompactWeeklySummaryView.swift; sourceTree = "<group>"; };
+		BB000022 /* CategoryInfoSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryInfoSheet.swift; sourceTree = "<group>"; };
+		CC000001 /* 9CupsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 9CupsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D11E4D9D8FD0BD47AC5E625A /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OnboardingView.swift; path = 9CupsApp/Views/OnboardingView.swift; sourceTree = SOURCE_ROOT; };
-		'BB000021' = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompactWeeklySummaryView.swift; sourceTree = "<group>"; };
+		E945EE25FB7144C6CBE404AB /* PremiumManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PremiumManager.swift; path = Services/PremiumManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		'DD000001' = {
+		DD000001 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -65,132 +75,169 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		'EE000001' = {
+		44D4111F212E03940E40D0F1 /* Today */ = {
 			isa = PBXGroup;
 			children = (
-				EE000002,
-				EE000010,
+				8D3E2368FBBD7CEB3F4D0A9D /* PhotoCheckInView.swift */,
+			);
+			name = Today;
+			sourceTree = "<group>";
+		};
+		83236EF0E8B25680E10A5C4C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BC0455C9CA9D80B5AB3A109C /* Premium */,
+				44D4111F212E03940E40D0F1 /* Today */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		BC0455C9CA9D80B5AB3A109C /* Premium */ = {
+			isa = PBXGroup;
+			children = (
+				87E8B3785EB0C8D52A32D132 /* PremiumUpgradeSheet.swift */,
+			);
+			name = Premium;
+			sourceTree = "<group>";
+		};
+		EE000001 = {
+			isa = PBXGroup;
+			children = (
+				EE000002 /* 9CupsApp */,
+				EE000010 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		'EE000002' = {
+		EE000002 /* 9CupsApp */ = {
 			isa = PBXGroup;
 			children = (
-				BB000019,
-				BB000020,
-				EE000003,
-				EE000004,
-				EE000005,
-				EE000006,
-				EE000007,
-				EE000008,
+				BB000019 /* Assets.xcassets */,
+				BB000020 /* Info.plist */,
+				EE000003 /* App */,
+				EE000004 /* Theme */,
+				EE000005 /* CoreData */,
+				EE000006 /* Models */,
+				EE000007 /* State */,
+				EE000008 /* Views */,
+				F2601A28F2DA938729255CC7 /* Services */,
+				83236EF0E8B25680E10A5C4C /* Views */,
 			);
 			path = 9CupsApp;
 			sourceTree = "<group>";
 		};
-		'EE000003' = {
+		EE000003 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				BB000001,
+				BB000001 /* NineCupsApp.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
 		};
-		'EE000004' = {
+		EE000004 /* Theme */ = {
 			isa = PBXGroup;
 			children = (
-				BB000002,
+				BB000002 /* CupsTheme.swift */,
 			);
 			path = Theme;
 			sourceTree = "<group>";
 		};
-		'EE000005' = {
+		EE000005 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				BB000003,
-				BB000004,
-				BB000005,
+				BB000003 /* DataModel.swift */,
+				BB000004 /* CDClasses.swift */,
+				BB000005 /* PersistenceController.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
 		};
-		'EE000006' = {
+		EE000006 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				BB000006,
-				BB000007,
+				BB000006 /* FoodDatabase.swift */,
+				BB000007 /* ProtocolLevels.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		'EE000007' = {
+		EE000007 /* State */ = {
 			isa = PBXGroup;
 			children = (
-				BB000008,
+				BB000008 /* AppState.swift */,
 			);
 			path = State;
 			sourceTree = "<group>";
 		};
-		'EE000008' = {
+		EE000008 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				BB000009,
-				EE000011,
-				EE000012,
-				EE000013,
+				BB000009 /* MainTabView.swift */,
+				EE000011 /* Today */,
+				EE000012 /* Guide */,
+				EE000013 /* Profile */,
 				D11E4D9D8FD0BD47AC5E625A /* OnboardingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		'EE000010' = {
+		EE000010 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CC000001,
+				CC000001 /* 9CupsApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		'EE000011' = {
+		EE000011 /* Today */ = {
 			isa = PBXGroup;
 			children = (
-				BB000010,
-				BB000011,
-				BB000012,
-				BB000021,
+				BB000010 /* TodayView.swift */,
+				BB000011 /* ColorRingView.swift */,
+				BB000012 /* CategoryCardView.swift */,
+				BB000022 /* CategoryInfoSheet.swift */,
+				BB000021 /* CompactWeeklySummaryView.swift */,
 			);
 			path = Today;
 			sourceTree = "<group>";
 		};
-		'EE000012' = {
+		EE000012 /* Guide */ = {
 			isa = PBXGroup;
 			children = (
-				BB000014,
-				BB000015,
-				BB000016,
+				BB000014 /* GuideView.swift */,
+				BB000015 /* LevelDetailView.swift */,
+				BB000016 /* FoodListView.swift */,
 			);
 			path = Guide;
 			sourceTree = "<group>";
 		};
-		'EE000013' = {
+		EE000013 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				BB000017,
-				BB000018,
+				BB000017 /* ProfileView.swift */,
+				BB000018 /* WeeklySummaryView.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		F2601A28F2DA938729255CC7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E945EE25FB7144C6CBE404AB /* PremiumManager.swift */,
+				8F04192E7E077E66756271F8 /* FoodPhotoAnalyzer.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		'FF000001' = {
+		FF000001 /* 9CupsApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FF000010;
+			buildConfigurationList = FF000010 /* Build configuration list for PBXNativeTarget "9CupsApp" */;
 			buildPhases = (
-				FF000002,
-				FF000003,
-				DD000001,
+				FF000002 /* Sources */,
+				FF000003 /* Resources */,
+				DD000001 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -198,13 +245,13 @@
 			);
 			name = 9CupsApp;
 			productName = 9CupsApp;
-			productReference = CC000001;
+			productReference = CC000001 /* 9CupsApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		'FF000099' = {
+		FF000099 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
@@ -215,7 +262,7 @@
 					};
 				};
 			};
-			buildConfigurationList = FF000020;
+			buildConfigurationList = FF000020 /* Build configuration list for PBXProject "9CupsApp" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -225,57 +272,62 @@
 			);
 			mainGroup = EE000001;
 			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
+			productRefGroup = EE000010 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FF000001,
+				FF000001 /* 9CupsApp */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		'FF000003' = {
+		FF000003 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA000019,
+				AA000019 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		'FF000002' = {
+		FF000002 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA000001,
-				AA000002,
-				AA000003,
-				AA000004,
-				AA000005,
-				AA000006,
-				AA000007,
-				AA000008,
-				AA000009,
-				AA000010,
-				AA000011,
-				AA000012,
-				AA000014,
-				AA000015,
-				AA000016,
-				AA000017,
-				AA000018,
+				AA000001 /* NineCupsApp.swift in Sources */,
+				AA000002 /* CupsTheme.swift in Sources */,
+				AA000003 /* DataModel.swift in Sources */,
+				AA000004 /* CDClasses.swift in Sources */,
+				AA000005 /* PersistenceController.swift in Sources */,
+				AA000006 /* FoodDatabase.swift in Sources */,
+				AA000007 /* ProtocolLevels.swift in Sources */,
+				AA000008 /* AppState.swift in Sources */,
+				AA000009 /* MainTabView.swift in Sources */,
+				AA000010 /* TodayView.swift in Sources */,
+				AA000011 /* ColorRingView.swift in Sources */,
+				AA000012 /* CategoryCardView.swift in Sources */,
+				AA000014 /* GuideView.swift in Sources */,
+				AA000015 /* LevelDetailView.swift in Sources */,
+				AA000016 /* FoodListView.swift in Sources */,
+				AA000017 /* ProfileView.swift in Sources */,
+				AA000018 /* WeeklySummaryView.swift in Sources */,
 				24E9428F97FD4081A1C1183F /* OnboardingView.swift in Sources */,
-				AA000021,
+				AA000021 /* CompactWeeklySummaryView.swift in Sources */,
+				EED0156C63D7EA2343B9624F /* PremiumManager.swift in Sources */,
+				41AD376A815B05DC466C19CE /* FoodPhotoAnalyzer.swift in Sources */,
+				B393A7A10758B5DA2CF3F25D /* PremiumUpgradeSheet.swift in Sources */,
+				068426D8DC9611A4590376BE /* PhotoCheckInView.swift in Sources */,
+				AA000022 /* CategoryInfoSheet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		'FF000011' = {
+		FF000011 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -338,7 +390,7 @@
 			};
 			name = Debug;
 		};
-		'FF000012' = {
+		FF000012 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -394,13 +446,14 @@
 			};
 			name = Release;
 		};
-		'FF000013' = {
+		FF000013 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8UFSRG6VKF;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = 9CupsApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -415,13 +468,14 @@
 			};
 			name = Debug;
 		};
-		'FF000014' = {
+		FF000014 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8UFSRG6VKF;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = 9CupsApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -439,25 +493,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		'FF000010' = {
+		FF000010 /* Build configuration list for PBXNativeTarget "9CupsApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FF000013,
-				FF000014,
+				FF000013 /* Debug */,
+				FF000014 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		'FF000020' = {
+		FF000020 /* Build configuration list for PBXProject "9CupsApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FF000011,
-				FF000012,
+				FF000011 /* Debug */,
+				FF000012 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = FF000099;
+	rootObject = FF000099 /* Project object */;
 }

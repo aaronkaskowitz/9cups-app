@@ -135,6 +135,11 @@ struct GuideView: View {
 
             VStack(alignment: .leading, spacing: 16) {
                 faqItem(
+                    question: "Do fruits count?",
+                    answer: "Yes! Fruits are a big part of the colored produce categories. Blueberries, cherries, mango, blackberries, pomegranate, figs — these all count toward your colored cups. The rule is the same: the fruit should be colored all the way through. Strawberries, raspberries, and citrus fruits all qualify. Apples and bananas do not (white inside)."
+                )
+
+                faqItem(
                     question: "What counts as 1 cup?",
                     answer: "1 cup is about the size of your closed fist, or a standard measuring cup (8 oz by volume). For raw leafy greens like spinach or kale, 1 cup is a loose handful. For denser vegetables like broccoli or beets, pack it lightly into a measuring cup. When in doubt, a fist-sized portion is close enough."
                 )

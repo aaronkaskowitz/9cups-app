@@ -3,6 +3,7 @@ import SwiftUI
 @main
 struct NineCupsApp: App {
     @StateObject private var appState = AppState()
+    @StateObject private var premiumManager = PremiumManager.shared
     @AppStorage("hasCompletedOnboarding") private var hasCompletedOnboarding = false
     @State private var isOnboarding = true
     @Environment(\.scenePhase) private var scenePhase
@@ -13,6 +14,7 @@ struct NineCupsApp: App {
                 if !hasCompletedOnboarding && isOnboarding {
                     OnboardingView(isOnboarding: $isOnboarding)
                         .environmentObject(appState)
+                        .environmentObject(premiumManager)
                         .transition(.opacity)
                         .onChange(of: isOnboarding) { _, newValue in
                             if !newValue {
@@ -22,6 +24,7 @@ struct NineCupsApp: App {
                 } else {
                     MainTabView()
                         .environmentObject(appState)
+                        .environmentObject(premiumManager)
                         .environment(\.managedObjectContext, appState.persistence.viewContext)
                         .transition(.opacity)
                 }

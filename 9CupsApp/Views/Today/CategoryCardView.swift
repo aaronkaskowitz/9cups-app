@@ -8,8 +8,11 @@ struct CategoryCardView: View {
     let unit: String
     let isCheckbox: Bool
     let isChecked: Bool
+    let categoryKey: CategoryKey?
     let onIncrement: () -> Void
     let onDecrement: () -> Void
+
+    @State private var showInfo = false
 
     init(
         emoji: String,
@@ -19,6 +22,7 @@ struct CategoryCardView: View {
         unit: String = "cups",
         isCheckbox: Bool = false,
         isChecked: Bool = false,
+        categoryKey: CategoryKey? = nil,
         onIncrement: @escaping () -> Void,
         onDecrement: @escaping () -> Void = {}
     ) {
@@ -29,6 +33,7 @@ struct CategoryCardView: View {
         self.unit = unit
         self.isCheckbox = isCheckbox
         self.isChecked = isChecked
+        self.categoryKey = categoryKey
         self.onIncrement = onIncrement
         self.onDecrement = onDecrement
     }
@@ -52,9 +57,22 @@ struct CategoryCardView: View {
 
             // Name + progress
             VStack(alignment: .leading, spacing: 6) {
-                Text(name)
-                    .font(CupsTheme.labelFont(15))
-                    .foregroundColor(CupsTheme.textPrimary)
+                HStack(spacing: 6) {
+                    Text(name)
+                        .font(CupsTheme.labelFont(15))
+                        .foregroundColor(CupsTheme.textPrimary)
+
+                    if categoryKey != nil {
+                        Button {
+                            showInfo = true
+                        } label: {
+                            Image(systemName: "info.circle")
+                                .font(.system(size: 14))
+                                .foregroundColor(CupsTheme.textSecondary.opacity(0.5))
+                        }
+                        .buttonStyle(.plain)
+                    }
+                }
 
                 if isCheckbox {
                     Text(isChecked ? "Done" : "Not yet")
@@ -123,5 +141,10 @@ struct CategoryCardView: View {
         .background(CupsTheme.cardBackground)
         .cornerRadius(CupsTheme.cornerRadius)
         .accessibilityElement(children: .contain)
+        .sheet(isPresented: $showInfo) {
+            if let key = categoryKey {
+                CategoryInfoSheet(info: CategoryInfo.forKey(key))
+            }
+        }
     }
 }
